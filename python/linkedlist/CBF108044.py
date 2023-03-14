@@ -100,13 +100,26 @@ class LinkedList:
 
     def heads(self, n=5):  # you should change head to heads
         res=[]
-        q = self.head 
-        i=0
-        while q and i<n: 
-            res.append(str(q))
-            i+=1
-            q = q.next
+        #q = self.head 
+        #i=0
+        #while q and i<n: 
+        #    res.append(str(q))
+        #    i+=1
+        #    q = q.next
+        #return '['+', '.join(res)+']'
+      
+        ##
+        for q in range(self.head):
+            if i==0 and i<n:
+              res.append(str(q))
+              i+=1
+              q=q.next
+
+            elif q==None: break
+
         return '['+', '.join(res)+']'
+      
+      
 
 if __name__ == '__main__':
    ll = LinkedList()
