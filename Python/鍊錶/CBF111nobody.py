@@ -31,8 +31,8 @@ class LinkedList:
         # 3. Make next of new Node as head 
         new_node.next = self.head 
   
-        # 4. Move the head to point to new Node 
-        self.head = new_node 
+        # 4. 移動頭部指向新節點
+        自我。頭 = 新節點  
         self.n += 1
         #if self.n==1: self.tail=new_node
         #return self
